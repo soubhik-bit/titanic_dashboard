@@ -5,7 +5,7 @@ import plotly.express as px
 st.set_page_config(layout='wide')
 st.title('Titanic Dashboard')
 
-df = pd.read_csv('titani_data.csv')
+df = pd.read_csv('titanic_data.csv')
 st.write(df)
 # print(df.info())
 df['Embarked'] = df['Embarked'].fillna('Unknown')
